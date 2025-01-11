@@ -3,104 +3,104 @@
     {
       "id": "a1b2",
       "categoryId": "a191",
-      "name": "MediaMarkt",
+      "name": "Croma",
       "desc": "Your go-to spot for the latest in electronics and appliances"
     },
     {
       "id": "b2c3",
       "categoryId": "e928",
-      "name": "KFC",
-      "desc": "A perfect place for enjoying crispy fried chicken and sides"
+      "name": "Bikanervala",
+      "desc": "A perfect place for enjoying crispy fried snacks and sides"
     },
     {
       "id": "c3d4",
       "categoryId": "e928",
-      "name": "McDonald's",
-      "desc": "Classic fast-food chain for burgers, fries, and quick meals"
+      "name": "Burger Singh",
+      "desc": "Classic Indian-style burgers and quick meals"
     },
     {
       "id": "d4e5",
       "categoryId": "d21e",
-      "name": "Rolex",
+      "name": "Titan",
       "desc": "Swiss luxury watches for discerning customers"
     },
     {
       "id": "e5f6",
       "categoryId": "d21e",
-      "name": "Louis Vuitton",
+      "name": "Hidesign",
       "desc": "High-end bags, luggage, and accessories"
     },
     {
       "id": "f6g7",
       "categoryId": "d21e",
-      "name": "Gucci",
-      "desc": " Italian luxury fashion for trendsetters"
+      "name": "Sabyasachi",
+      "desc": "Indian luxury fashion for trendsetters"
     },
     {
       "id": "g7h8",
       "categoryId": "d21e",
-      "name": "Chanel",
-      "desc": "Iconic fashion, fragrance, and accessory collections"
+      "name": "Manish Malhotra",
+      "desc": "Iconic fashion, bridal wear, and accessory collections"
     },
     {
       "id": "h8i9",
       "categoryId": "87b0",
-      "name": "Levi's",
-      "desc": "he classic American denim and casual wear"
+      "name": "Van Heusen",
+      "desc": "The classic Indian apparel for work and casual wear"
     },
     {
       "id": "i9j0",
       "categoryId": "58a9",
-      "name": "Mall Office",
+      "name": "Mall Information",
       "desc": "For all your mall inquiries and services"
     },
     {
       "id": "j0k1",
       "categoryId": "87b0",
-      "name": "Zara",
+      "name": "Westside",
       "desc": "Latest trends in apparel and accessories"
     },
     {
       "id": "k1l2",
       "categoryId": "a191",
-      "name": "McShark",
+      "name": "Apple Store",
       "desc": "Specializing in Apple products and accessories"
     },
     {
       "id": "l2m3",
       "categoryId": "87b0",
-      "name": "Nike",
-      "desc": "Global leader in athletic footwear, apparel, and equipmen"
+      "name": "Puma",
+      "desc": "Global leader in athletic footwear, apparel, and equipment"
     },
     {
       "id": "m3n4",
       "categoryId": "87b0",
-      "name": "Adidas",
+      "name": "Reebok",
       "desc": "Athletic wear and performance gear"
     },
     {
       "id": "n4o5",
       "categoryId": "52f1",
-      "name": "Primark",
+      "name": "Reliance Trends",
       "desc": "Affordable fashion for the whole family"
     },
     {
       "id": "p6q7",
       "categoryId": "87b0",
-      "name": "H&M",
+      "name": "FabIndia",
       "desc": "Fashion and quality at the best price"
     },
     {
       "id": "q7r8",
       "categoryId": "87b0",
-      "name": "Vans",
-      "desc": "Authentic skateboarding footwear and apparel"
+      "name": "Red Tape",
+      "desc": "Authentic footwear and apparel"
     },
     {
       "id": "r8s9",
       "categoryId": "e928",
-      "name": "Starbucks",
-      "desc": "Your favorite brews and snacks"
+      "name": "Chai Point",
+      "desc": "Your favorite chai and snacks"
     },
     {
       "id": "s9t0",
@@ -111,68 +111,68 @@
     {
       "id": "t0u1",
       "categoryId": "87b0",
-      "name": "Victoria's Secret",
+      "name": "Shoppers Stop",
       "desc": "Exquisite lingerie, sleepwear, and beauty products"
     },
     {
       "id": "u1v2",
       "categoryId": "d21e",
-      "name": "Pandora",
+      "name": "Tanishq",
       "desc": "Customizable charm bracelets, rings, and more"
     },
     {
       "id": "v2w3",
       "categoryId": "87b0",
-      "name": "Foot Locker",
+      "name": "Nike",
       "desc": "The latest in athletic footwear and apparel"
     },
     {
       "id": "w3x4",
       "categoryId": "52f1",
-      "name": "Pharmacy",
+      "name": "Health and Glow",
       "desc": "Prescription drugs, health products, and wellness advice"
     },
     {
       "id": "x4y5",
       "categoryId": "a191",
-      "name": "GameStop",
+      "name": "Game Zone",
       "desc": "Video games, consumer electronics, and gaming merchandise retailer"
     },
     {
       "id": "y5z6",
       "categoryId": "87b0",
-      "name": "Claire's",
-      "desc": "Accessories and jewelry for young girls and teenagers"
+      "name": "Miniso",
+      "desc": "Accessories and lifestyle products for young girls and teenagers"
     },
     {
       "id": "z6a7",
       "categoryId": "52f1",
-      "name": "Tobacco Shop",
+      "name": "Smoke Hub",
       "desc": "Tobacco products and smoking accessories"
     },
     {
       "id": "a7b8",
       "categoryId": "52f1",
-      "name": "Sephora",
+      "name": "Nykaa",
       "desc": "Skincare, cosmetics, and fragrances"
     },
     {
       "id": "b8c9",
       "categoryId": "52f1",
-      "name": "PetSmart",
+      "name": "Petsmart",
       "desc": "Everything for your pet's needs, from food to grooming"
     },
     {
       "id": "c9d0",
       "categoryId": "58a9",
-      "name": "Barbershop",
+      "name": "The Barbershop",
       "desc": "Classic and contemporary haircuts"
     },
     {
       "id": "d9d0",
       "categoryId": "d21e",
-      "name": "Svarovski",
-      "desc": "Fine crystal jewelry and accessories"
+      "name": "PCJ",
+      "desc": "Fine jewelry and accessories"
     },
     {
       "id": "ab12",
@@ -228,7 +228,7 @@
     },
     {
       "id": "e753",
-      "name": "Entrace"
+      "name": "Entrance"
     }
   ]
 }

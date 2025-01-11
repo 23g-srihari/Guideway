@@ -9,6 +9,7 @@ function EditPositionButton() {
   const { isEditMode, setIsEditMode, setNavigation } = useContext(
     NavigationContext
   ) as NavigationContextType;
+
   function handleEdit() {
     setIsEditMode(!isEditMode);
     resetEdges();
@@ -17,15 +18,16 @@ function EditPositionButton() {
       end: "",
     }));
   }
+
   return (
-    <Tooltip content="Change Position" className="bg-green-500">
+    <Tooltip content="Change Position" className="bg-green-600">
       <button
         data-tooltip-target="tooltip-default"
-        className="ml-1 h-12 w-12 bg-green-500 center rounded text-white"
+        className="ml-1 h-12 w-12 bg-green-600 center rounded text-white hover:bg-green-700 transition-all duration-200 ease-in-out"
         onClick={() => handleEdit()}
         aria-label="change position"
       >
-        <FiMapPin />
+        <FiMapPin className="text-white" />
       </button>
     </Tooltip>
   );

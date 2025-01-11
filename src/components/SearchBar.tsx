@@ -134,17 +134,17 @@ function SearchBar() {
 
   return (
     <div className="md:w-96 w-full flex flex-row">
-      <div className="flex flex-inline rounded w-full">
-        <div className="h-12 w-12 center flex-none rounded-l bg-white text-blue-500 text-[8px] ">
-          <div className="w-full h-8 center border-gray-300 border-r">
+      <div className="flex flex-inline rounded w-full bg-gray-800">
+        <div className="h-12 w-12 center flex-none rounded-l bg-gray-700 text-blue-400 text-[8px] ">
+          <div className="w-full h-8 center border-gray-500 border-r">
             <FiCircle />
           </div>
         </div>
         <div className="flex w-full relative">
           <input
-            className={`h-12 p-4 w-full flex-none text-gray-900 text-sm md:text-md ${
-              isInputInvalid && "input-error"
-            } `}
+            className={`h-12 p-4 w-full flex-none bg-gray-700 text-gray-300 text-sm md:text-md ${
+              isInputInvalid ? "border-red-500" : ""
+            }`}
             placeholder="Search"
             value={inputValue}
             onChange={handleInputChange}
@@ -158,16 +158,16 @@ function SearchBar() {
           {isAutocomplete && (
             <ul
               ref={suggestionsRef}
-              className="absolute w-full z-10 mt-[3.25rem] bg-white rounded shadow-md max-h-60 h-min overflow-auto"
+              className="absolute w-full z-10 mt-[3.25rem] bg-gray-800 rounded shadow-md max-h-60 h-min overflow-auto"
               key={"suggestions"}
             >
               {suggestions.length > 0 ? (
                 suggestions.map((obj, index) => (
                   <li
                     key={index}
-                    className={`cursor-pointer p-2 border-t text-gray-600 hover:bg-gray-200 active:bg-gray-300 text-sm md:text-md ${
+                    className={`cursor-pointer p-2 border-t text-gray-300 hover:bg-gray-700 active:bg-gray-600 text-sm md:text-md ${
                       selectedIndex === index
-                        ? "border-l-4 border-blue-500 bg-gray-200"
+                        ? "border-l-4 border-blue-500 bg-gray-600"
                         : ""
                     }`}
                     onMouseDown={() => handleSuggestionClick(obj)}

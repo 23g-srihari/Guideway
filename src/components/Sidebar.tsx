@@ -52,46 +52,24 @@ function Sidebar() {
   }
 
   return (
-    <aside className="flex flex-col rounded-none w-[35rem] h-screen p-3 bg-white shadow-xl shadow-gray-200 -translate-x-full transform transition-transform duration-150 ease-in lg:translate-x-0 lg:shadow-md ">
-      <header className="flex flex-col mb-4 pr-1 border-b py-2 w-full">
-        <div className="flex items-center p-2 mb-4 text-sm text-blue-800 border border-blue-300 rounded-lg bg-blue-50">
-          <svg
-            className="flex-shrink-0 inline w-4 h-4 me-3"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-          >
-            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
-          </svg>
-          <a
-            href="https://github.com/openindoormap/openindoormaps"
-            target="_blank"
-            rel="noreferrer"
-            className="font-semibold text-blue-800"
-          >
-            Check out OpenIndoorMaps
-          </a>
-        </div>
+    <aside className="flex flex-col rounded-none w-[35rem] h-screen p-3 bg-gray-900 shadow-xl shadow-gray-800 -translate-x-full transform transition-transform duration-150 ease-in lg:translate-x-0 lg:shadow-md">
+      <header className="flex flex-col mb-4 pr-1 border-b py-2 w-full border-gray-600">
         <div className="flex items-center flex-none mr-10">
-          <div className="rounded-md w-16 h-16 p-4 bg-gray-100 center">
+          <div className="rounded-md w-16 h-16 p-4 bg-gray-700 center">
             <img
               src={logo}
-              alt="PathPal"
-              className={` ${isRotating ? "rotate" : ""}`}
+              alt="Guide Way"
+              className={`${isRotating ? "rotate" : ""}`}
               onClick={() => setIsRotating(true)}
               onAnimationEnd={() => setIsRotating(false)}
             />
           </div>
-          <div className="flex flex-col">
-            <div className="flex flex-col">
-              <p className="text-2xl font-semibold text-gray-900 pl-2">
-                PathPal
-              </p>
-              <p className="text-sm font-semibold text-[#225EA9] pl-2">
-                Indoor-Navigation
-              </p>
-            </div>
+          <div className="flex flex-col ml-2">
+            <p className="text-2xl font-semibold text-white">Guide Way</p>
+            <div className="text-center">
+  <p className="text-xs font-semibold text-blue-200">Navigate Indoor</p>
+  <p className="text-xs font-semibold text-blue-200 mt-2">Spaces</p>
+</div>
           </div>
         </div>
       </header>
@@ -101,31 +79,31 @@ function Sidebar() {
           .map((letter, index) => (
             <div key={index} className="mb-4">
               <header className="p-2">
-                <h2 className="text-2xl font-bold">
+                <h2 className="text-2xl font-bold text-white">
                   {letter}
-                  <span className="ml-2 text-sm font-medium text-gray-900">
+                  <span className="ml-2 text-sm font-medium text-gray-400">
                     - {parsedObjects[letter].len}{" "}
                     {parsedObjects[letter].len === 1 ? "Result" : "Results"}
                   </span>
                 </h2>
               </header>
-              <div className="flex flex-col ">
+              <div className="flex flex-col">
                 {parsedObjects[letter].results.map((item) => (
                   <div
                     key={item.id?.toString()}
                     data-product={item.name}
-                    className="flex bg-[#f4faff] m-1 px-4 py-2 shadow-sm rounded-md cursor-pointer h-auto hover:bg-[#e4f2ff]"
+                    className="flex bg-gray-800 m-1 px-4 py-2 shadow-sm rounded-md cursor-pointer hover:bg-gray-700"
                     onClick={() => handleObjectNavigation(item.name)}
                   >
                     <div className="m-1">
-                      <p className="text-xs 2xl:text-sm font-semibold">
+                      <p className="text-xs 2xl:text-sm font-semibold text-gray-300">
                         {item.name}
                       </p>
-                      <p className="text-xs 2xl:text-sm  text-gray-600">
+                      <p className="text-xs 2xl:text-sm text-gray-500">
                         {item.desc}
                       </p>
                     </div>
-                    <div className="center ml-auto h-auto center text-xl text-blue-300">
+                    <div className="center ml-auto h-auto center text-xl text-blue-400">
                       <FiChevronRight />
                     </div>
                   </div>
@@ -137,4 +115,5 @@ function Sidebar() {
     </aside>
   );
 }
+
 export default Sidebar;

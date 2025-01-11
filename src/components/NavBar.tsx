@@ -29,23 +29,26 @@ function NavBar() {
   function handleCollapse() {
     setIsAdmin(false);
   }
+
   return (
-    <div className="bottom-0 left-0  w-full  border-t border-gray-200">
-      <div className="grid h-full grid-cols-7 m-0 font-medium bg-white-500 text-2xl">
+    <div className="bottom-0 left-0 w-full border-t border-gray-700 bg-gray-900">
+      <div className="grid h-full grid-cols-7 m-0 font-medium text-2xl">
         {NavbarItems.map((item, index) => (
           <NavLink
             key={index}
             to={item.link}
             className={({ isActive }) =>
-              (isActive ? "font-semibold text-black" : "text-gray-500") +
-              "h-12 py-1 flex flex-none center justify-center text-2xl border-r-2 col-span-2"
+              (isActive
+                ? "font-semibold text-white bg-gray-700"
+                : "text-gray-300 hover:text-white hover:bg-gray-800") +
+              " h-12 py-1 flex flex-none center justify-center text-2xl border-r-2 col-span-2"
             }
             aria-label={item.name}
           >
-            <item.icon />
+            <item.icon className="text-white" />
           </NavLink>
         ))}
-        <button className="center text-2xl" onClick={handleCollapse}>
+        <button className="center text-2xl text-gray-300 hover:text-white" onClick={handleCollapse}>
           <FaChevronDown />
         </button>
       </div>
